@@ -1,119 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>A New Startup: Sign Up Today!</title>
+    <title>Tim Gu</title>
 
-    <!-- uncomment for production -->
     <!-- Bootstrap core CSS -->
-    <link href="<%= static_path + "/bootstrap/css/theme/" + theme + "/bootstrap.css" %>" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<%= static_path + "/bootstrap/css/jumbotron-narrow.css" %>" rel="stylesheet">
-    
+    <link href="css/resume_1.min.css" rel="stylesheet">
+
   </head>
 
-  <body>
+  <body id="page-top">
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Press</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Tim Gu</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#extracurricular">Extracurricular</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
         </ul>
-        <h3 class="text-muted">A New Startup</h3>
       </div>
-	  <% if (flask_debug === 'true') { %>
-      <div class="alert alert-danger">
-      	Flask is in debug mode. This is not safe for production.
-      </div>
-      <% } %>
-      <div id="signupSuccess" class="alert alert-success" style="display:none">
-        <p id="signupSuccessText">Thanks for signing up! You'll be among the first to know when we launch.</p>
-      </div>
-      <div id="signupDuplicate" class="alert alert-success" style="display:none">
-        <p id="signupDuplicateText">Fear not, you're already on the list! You'll be among the first to know when we launch.</p>
-      </div>
-      <div id="signupError" class="alert alert-info" style="display:none">
-        <p id="signupErrorText">Well this is embarrassing. It looks like we're having trouble getting you on the list.</p>
-      </div>
-      <div class="jumbotron">
-        <h1>The next big thing is coming...</h1>
-        <p class="lead">We're pretty thrilled to unveil our latest creation. Sign up below to be notified when we officially launch!</p>
-        <p><a class="btn btn-lg btn-success"  data-toggle="modal" href="#signupModal">Sign up today</a></p>
-      </div>
+    </nav>
 
+    <div class="container-fluid p-0 background1">
 
-      <div class="footer">
-        <p>&copy; A New Startup 2013</p>
-      </div>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Tim Gu</h1>
+          <div class="subheading mb-5">Current University of Waterloo Computer Engineering undergraduate student.
+          </div>
+          <p class="lead mb-5">253 Lester Street, Waterloo, Ontario, ON · (778) 806-1810 ·
+            <a href="mailto:c28gu@uwaterloo.ca">c28gu@uwaterloo.ca</a></p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/tim-chenggu/" data-toggle="tooltip" title = "linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/timchenggu123" data-toggle="tooltip" title ="github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="./files/resume_19_09_05.pdf" data-toggle="tooltip" title="Resume">
+              <i class="fas fa-file"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+    </div>
+
+    <div class="container-fluid p-0 bg-black">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Ambient Air Quality Data Analyst</h3>
+              <div class="subheading mb-3">Environment Canada National Air Pollution Surveillance Program</div>
+              <p>Managed National Air Quality Surveillance Program Data base in SQL Server and developed custom data analytics software using a combination of R, MatLab, SQL and VBA. Migrated the legacy MSAccess database to the NAPS SQL database. Assisted in redesigning the NAPS Web Portal to support real-time data updates and interaction. Analyzed PM2.5 data trend between 2002 and 2017 across over 250 sites in Canda and presented the results of the analysis in 2018 August National Air Pollution Surveillance Program (NAPS) Manager meeting. Also developed a various utility softwares in as per requested by the department staff. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">April 2018 - September 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Agile Web Project Coordinator</h3>
+              <div class="subheading mb-3">QingPath Inc.</div>
+              <p>Agile Web Development for community-centric small businesses with Mobile-First development concepts in mind. Projects built using Bootstrap framework with html5, CSS3 and JavaScript. Performed cross-browser QA testing and debugging and communicated with clients for project details and specification </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2017 - April 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Engineering Student</h3>
+              <div class="subheading mb-3">Township of South Frontenac</div>
+              <p>>Developed a custom traffic data management software in VBA using Google Maps API and AutoLisp/VisualLisp(for automatic updates to the Township Map in AutoCAD Civil 3D Software. Created a variety of utility software as per requested by the Township staff in VBA and Python. Managed township watermain data inventory.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2017 - December 2017</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects </h2>
+          
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href = "https://devpost.com/software/flow-ai">Flow AI</a></h3>
+              <div class="subheading mb-3">JavaScript Firebase FlowAI UIPath </div>
+              <div>Winner of Hack the North UIPath Award. A Google action based, NLP empowered, workflow intergration tool. Flow AI brings Google Assistant to life, and let it help you in all aspects of both your work and life. Combined with UIPath, a powerful automation tool, Flow AI enables your Google voice assistant to complete any task that you can normally do on your computer. Grocery shopping? No problem! Flow AI can even make a presentation for you, completed with key notes and graphs in real time as you make your speech thanks to the powerful VoiceFlow API and our custom JavaScript code that can extract key information from a speech. </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Sept 2019 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href = "https://github.com/timchenggu123/OrangeScript">OrangeScript</a></h3>
+              <div class="subheading mb-3">C++ </div>
+              <div>An imperative, dynamically typed, interpreted programming language. OrangeScript is fresh, convenient, and has a surgary, easy to learn syntax. Just like an orange! The language supports first class functions and features automatic garbabge collection. OrangeScript is developed using Visual Studio. It is still a new-born baby of a language, so expect a lot of updates in the near future! </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2019 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href = "https://github.com/timchenggu123/SaveMi">SaveMi</a></h3>
+              <div class="subheading mb-3">Android, Firebase & JavaScript </div>
+              <div>Winner of 2019 Waterloo EngHack Best Use of Google Cloud Platform! SaveMi is a personal heath monitoring app designed for people with severe allergies. Snapping your food before digging in? No problem! SaveMi identifies potential allergy sources from photos taken, send out warnings or reminders to your friends and families. It also keeps a record of contact with potential allergy sources online to make it easier for health professionals acessing yoru data! </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2019 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a>ConcreteNN</a></h3>
+              <div class="subheading mb-3">Python · Tensor Flow </div>
+              <div>A deep GAN neural network trained to generate concrete mixes for desirable tensile and compressive strengths of resulting concrete. Concrete research and design can be a time-consuming and expensive process that consists of reptitive testings. ConcreteNN is aimed to provide a more sustainable and efficient solution to concrete mix design by generating a preliminary mix before the actual testing stage. Started as a collabroation project between ETS and the University of Waterloo Concrete Canoe Team, ConcreteNN is currently being used to generate preliminary mix designs by the University of Waterloo Concrete Toboggan and Concrete Canoe design team.</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2016 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href = "https://github.com/timchenggu123/CppNeuralNetwork">CppNeuralNetwork</a></h3>
+              <div class="subheading mb-3">C++</div>
+              <p>A complete sigmoid SGD neural network written in C++. The network is capable of training with and testing against the MNIST data set. The project is developed and intended for gaining a better understanding of the structure of standard SGD Neural Networks.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href = "https://github.com/timchenggu123/FlashmemorizeDroid">FlashmemorizeDroid</a></h3>
+              <div class="subheading mb-3">Android Application</div>
+              <p>At first, I created this app to help myself learn a list of Japanese words I jotted down in a random txt file. It was initially just a small PyQt app I wrote on a whim, but now it is a full-fleged object oriented Android app with lots of customizability and a handful of shuffling algorithms. Flahshmemorize can turn any .txt file into a deck of flashcards completed with pictures. Its versatility is what put it a cut above its competetors such as Anki, especially for students like myself who constantly switch between devices between home, school, and work. The original Qt Application is currently discontinued as I am trying to focus on the Android app right now.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">October 2018 - Present</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href = "https://github.com/timchenggu123/BitTimeScheduler">BitTimeScheduler</a></h3>
+              <div class="subheading mb-3">Python · Google Calendar API</div>
+              <p>An open source time manager application written in python. BitTimeScheduler ranks events based on their importance v.s urgency and schedule or reschedule them on Google Calendar through Google API. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2019 - Present</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Waterloo</h3>
+              <div class="subheading mb-3">Candidate for Bachelor of Computer Engineering (expected 2022)</div>
+              <div>software development</div>
+              <p>GPA: 82.02%</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2016 - April 2022</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Program Languages and Tools</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Programming:  C++, Java, Python</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Web:          Html5, CSS, JavaScript, JQuery, SQL Server, Bootstrap</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile:       Java, Android Studio.</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Data Science: Tensor Flow, MatLab, R, VBA</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Hardware:     VHDL, RISC V, Assembly</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Systems:      Windows, Ubuntu</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Tools:        Git, Bash, Cmd, VisualStudio, VS Code, Spyder</li>
+          </ul>
+        </div>
+      </section>
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="extracurricular">
+        <div class="my-auto">
+          <h2 class="mb-5">Extracurricular</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Waterloo WATonomous Self Driving Vehicle Team</h3>
+              <div class="subheading mb-3">Core Member, Data Processing </div>
+              <div>The link to the website of the team can be found <a href = "https://watonomous.ca/#/"> here </a>. watonomous is a student design team at the University of Waterloo at the forefront in the design, creation, and neural training of autonomous self-driving vehicles. The team competes in the SAE competetion every 3 years. As one of the core memebers of the Data Processing team, my duties mainly consists of high-level data fusion and integration. That is, fusing both raw and processed datastreams from different sensors along with the results from the perception team into workable data that can be then used for more advanced operations such as object tracking.  </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2019 - Present</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="extracurricular">
+        <div class="my-auto">
+          <h2 class="mb-5">Extracurricular</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Waterloo Concrete Toboggan and Canoe Team</h3>
+              <div class="subheading mb-3">Software Lead </div>
+              <div>Why Concrete Team? I have met people who have found it, interesting, that I would choose to join the Concrete Team among all other options. Well, one reason is that the place is where many of my friends belong. However, another more important reason is that I absolutely love the idea of floating concrete. Moreover, I also love it when my programming knowledge meets meaningful applications. With alorithms such as ConcreteNN, the team's productivity can be boosted so much higher. As a verteran member who has competed in both 2018 GNCTR and CNCCC competetions, I am proud of what we have achieved as a team, and I very much looking forwards towards applying my skills to open up a new dimension in concrete and structural design.  </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2017 - Present</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <hr class="m-0">
+
       
-      <!-- Modal -->
-       <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
-         <div class="modal-dialog">
-           <div class="modal-content">
-             <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-               <h4 class="modal-title">Provide a few details and we'll be in touch...</h4>
-             </div>
-             <div class="modal-body">
-               <form id="signupForm" role="form">
-                 <input type="hidden" id="theme" name="theme" value="<%= theme %>"/>
-                 <div class="form-group">
-                   <label for="name">Name</label>
-                   <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
-                 </div>
-                 <div class="form-group">
-                   <label for="email">Email address</label>
-                   <input type="email" class="form-control" id="email" name="email" placeholder="Your email address">
-                 </div>
-                 <div class="form-group">
-                   <label for="previewAccess">Interested in Preview Access?</label>
-                   <select class="form-control" name="previewAccess">
-                     <option>Yes</option>
-                     <option>No</option>
-                   </select>
-                 </div>
-             </div>
-             <div class="modal-footer">
-               <button id="signup" type="button" class="btn btn-primary">Sign Up!</button>
-             </div>
-           </div><!-- /.modal-content -->
-         </div><!-- /.modal-dialog -->
-       </div><!-- /.modal -->
 
-    </div> <!-- /container -->
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>In my spare time, I love to play the violin. I am currently learning the piece <a href = 'https://www.youtube.com/watch?v=IXmExFepvVA'>Praeludium and Allegro  </a> by Fritz Kreisler. It is a great piece, definitely worth checking out if you are into classical music!</p>
+          <p class="mb-0">I also love reading fantasy/scifi novels. My all-time favourite is <a href = 'https://www.patrickrothfuss.com/content/books.asp'>The King Killer Chronicles</a> by Patrick Rothfuss. Words alone are not enough to describe how awesome this series is; perhaps a song would, but even that is going to be tricky. The day the third book is getting released definitely would become one of the happiest days of my life (come on Pat!). Highly recommend it if you are a fantasy lover like me!</p>
+        </div>
+      </section>
 
-    <script src="<%= static_path + "/jquery/jquery-1.11.3.min.js" %>"></script>
-    <script src="<%= static_path + "/bootstrap/js/bootstrap.min.js" %>"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      $("#signup").click(function() {
-        $.post( "/signup", $("#signupForm").serialize(),
-                function(data) {
-                  $("#signupSuccess").show();
-                }
-              )
-              .error(function(xhr) {
-                switch(xhr.status) {
-                  case 409:
-                    $("#signupDuplicate").show();
-                    break;
-                  default:
-                    $("#signupError").show();
-                }
-              })
-              .always(function() {
-                $("#signupModal").modal('hide');
-              });
-      })
-    })
-    </script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
   </body>
+
 </html>
