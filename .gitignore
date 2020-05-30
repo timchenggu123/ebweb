@@ -1,0 +1,4 @@
+.DS_Store
+*.zip
+# Elastic Beanstalk CLI Files
+.elasticbeanstalk/*
