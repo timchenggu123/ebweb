@@ -40,9 +40,12 @@ if (cluster.isMaster) {
     app.set('views', __dirname + '/views');
     app.use(bodyParser.urlencoded({extended:false}));
 
+    //This is for debugg only
+    app.use(express.static(__dirname+"/static"))
+    //end of debug only
     app.get('/', function(req, res) {
         res.render('index', {
-            static_path: 'static',
+            static_path: '',
             theme: process.env.THEME || 'flatly',
             flask_debug: process.env.FLASK_DEBUG || 'false'
         });

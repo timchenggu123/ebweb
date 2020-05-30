@@ -2,3 +2,4 @@
 *.zip
 # Elastic Beanstalk CLI Files
 .elasticbeanstalk/*
+modules
