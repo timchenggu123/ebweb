@@ -40,8 +40,11 @@ if (cluster.isMaster) {
     app.set('views', __dirname + '/views');
     app.use(bodyParser.urlencoded({extended:false}));
 
-    //This is for debugg only
-    app.use(express.static(__dirname+"/static"))
+    //This is for debug only
+    if (process.env.ENV == 'dev'){
+        console.log("In the development environment"); 
+        app.use(express.static(__dirname+"/static"));
+    }
     //end of debug only
     app.get('/', function(req, res) {
         res.render('index', {
