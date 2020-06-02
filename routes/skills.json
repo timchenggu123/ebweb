@@ -1,0 +1,29 @@
+{
+    "data":[
+        {
+            "category":"Programming",
+            "items":"C++, Java, Python"
+        },
+        {
+            "category":"Web",
+            "items":"Html5, CSS, JavaScript, JQuery, SQL Server, Bootstrap,Express.js"
+        },
+        {
+            "category":"Mobile",
+            "items":"Java, Kotlin, Android Studio"
+        },
+        {
+            "category":"Data Science",
+            "items":"SQL, Matlab, R, VBA, Tensor Flow"
+        },
+        {
+            "category":"Hardware",
+            "items":"Verilog, VHDL, RISC V"
+        },
+        {
+            "category":"System",
+            "items":"Ubuntu, Git, Bash, Shell"
+        }
+
+    ]
+}

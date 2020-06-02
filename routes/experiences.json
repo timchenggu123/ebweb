@@ -1,0 +1,26 @@
+{"data":[
+    {
+        "title":"Data Engineering",
+        "organization":"Wayfair LLC (Boston, MA)",
+        "date":"January 2020 - April 2020",
+        "description":"My big project was to build a tool for verifying the data consistency between two internal data delivery platforms, AtScale and Looker. The challenge was to determine the semantical equivalency between MDX and LookML without querying the data base. To solve this, I built a custom MDX to SQL translator and a custom interpreter for the subset of SQl used. The finished product on average saves 6-8 hours of work for the BI engineer per week. I also helped with managing and troubleshooting the database."
+    },
+    {
+        "title": "Ambient Air Quality Data Analyst",
+        "organization":"Environment and Climate Change Canada",
+        "date":"April 2018 - September 2018",
+        "description": "Managed National Air Quality Surveillance Program Data base in SQL Server and developed custom data analytics software using a combination of R, MatLab, SQL and VBA. Migrated the legacy MSAccess database to the NAPS SQL database. Assisted in redesigning the NAPS Web Portal to support real-time data updates and interaction. Analyzed PM2.5 data trend between 2002 and 2017 across over 250 sites in Canda and presented the results of the analysis in 2018 August National Air Pollution Surveillance Program (NAPS) Manager meeting. Also developed a various utility softwares in as per requested by the department staff."
+    },
+    {
+        "title": "Agile Web Project Coordinator",
+        "organization": "QingPath Technologies. Inc",
+        "date": "January 2017 - April 2017",
+        "description": "Agile Web Development for community-centric small businesses with Mobile-First development concepts in mind. Projects built using Bootstrap framework with html5, CSS3 and JavaScript. Performed cross-browser QA testing and debugging and communicated with clients for project details and specification"
+    },
+    {
+        "title":"Engineering Student",
+        "organization": "Township of South Frontenac",
+        "date": "September 2017 - December 2018",
+        "description":"Developed a custom traffic data management software in VBA using Google Maps API and AutoLisp/VisualLisp(for automatic updates to the Township Map in AutoCAD Civil 3D Software. Created a variety of utility software as per requested by the Township staff in VBA and Python. Managed township watermain data inventory."
+    }
+]}

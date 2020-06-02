@@ -1,6 +1,6 @@
 .DS_Store
 *.zip
 # Elastic Beanstalk CLI Files
-.elasticbeanstalk/*
 modules
 .evn
+node_modules

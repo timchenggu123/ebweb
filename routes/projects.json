@@ -1,0 +1,44 @@
+{"data":[
+    {
+        "title":"Flow AI",
+        "tech":"JavaScript Firebase FlowAI UIPath",
+        "link": "https://devpost.com/software/flow-ai",
+        "description":"Winner of Hack the North UIPath Award. A Google action based, NLP empowered, workflow intergration tool. Flow AI brings Google Assistant to life, and let it help you in all aspects of both your work and life. Combined with UIPath, a powerful automation tool, Flow AI enables your Google voice assistant to complete any task that you can normally do on your computer. Grocery shopping? No problem! Flow AI can even make a presentation for you, completed with key notes and graphs in real time as you make your speech thanks to the powerful VoiceFlow API and our custom JavaScript code that can extract key information from a speech.",
+        "date": "Sept 2019 - Present"
+    },
+    {
+        "title":"OrangeScript",
+        "tech":"C++",
+        "link": "https://github.com/timchenggu123/OrangeScript",
+        "description":"An imperative, dynamically typed, interpreted programming language. OrangeScript is fresh, convenient, and has a surgary, easy to learn syntax. Just like an orange! The language supports first class functions and features automatic garbabge collection. OrangeScript is developed using Visual Studio. It is still a new-born baby of a language, so expect a lot of updates in the near future!",
+        "date": "June 2019 - Present"
+    },
+    {
+        "title":"SaveMi",
+        "tech":"Android, Firebase & JavaScript",
+        "link":"https://github.com/timchenggu123/SaveMi",
+        "description":"Winner of 2019 Waterloo EngHack Best Use of Google Cloud Platform! SaveMi is a personal heath monitoring app designed for people with severe allergies. Snapping your food before digging in? No problem! SaveMi identifies potential allergy sources from photos taken, send out warnings or reminders to your friends and families. It also keeps a record of contact with potential allergy sources online to make it easier for health professionals acessing yoru data!",
+        "date": "May 2019"
+    }, 
+    {
+        "title":"ConcreteNN",
+        "tech":"Python · Tensor Flow",
+        "link":"",
+        "description":"A deep GAN neural network trained to generate concrete mixes for desirable tensile and compressive strengths of resulting concrete. Concrete research and design can be a time-consuming and expensive process that consists of reptitive testings. ConcreteNN is aimed to provide a more sustainable and efficient solution to concrete mix design by generating a preliminary mix before the actual testing stage. Started as a collabroation project between ETS and the University of Waterloo Concrete Canoe Team, ConcreteNN is currently being used to generate preliminary mix designs by the University of Waterloo Concrete Toboggan and Concrete Canoe design team.",
+        "date": "June 2016 - Sept 2016"
+    },
+    {
+        "title":"CppNeuralNetwork",
+        "tech":"C++",
+        "link":"https://github.com/timchenggu123/CppNeuralNetwork",
+        "description":"A basic sigmoid SGD neural network written in C++. The network is capable of training with and testing against the MNIST data set. The project is developed and intended for gaining a better understanding of the structure of standard SGD Neural Networks.",
+        "date": "June 2016 - Sept 2016"
+    },
+    {
+        "title":"FlashmemorizeDroid",
+        "tech":"Android Application",
+        "link":"https://github.com/timchenggu123/FlashmemorizeDroid",
+        "description":"At first, I created this app to help myself learn a list of Japanese words I jotted down in a random txt file. It was initially just a small PyQt app I wrote on a whim, but now it is a full-fleged object oriented Android app with lots of customizability and a handful of shuffling algorithms. Flahshmemorize can turn any .txt file into a deck of flashcards completed with pictures. Its versatility is what put it a cut above its competetors such as Anki, especially for students like myself who constantly switch between devices between home, school, and work. The original Qt Application is currently discontinued as I am trying to focus on the Android app right now.",
+        "date": "May 2019"
+    }
+]}
