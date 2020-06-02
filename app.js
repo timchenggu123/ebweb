@@ -35,10 +35,12 @@ if (cluster.isMaster) {
     var ddbTable =  process.env.STARTUP_SIGNUP_TABLE;
     var snsTopic =  process.env.NEW_SIGNUP_TOPIC;
     var app = express();
+    var routes = require(__dirname + '/routes/index');
 
     app.set('view engine', 'ejs');
     app.set('views', __dirname + '/views');
     app.use(bodyParser.urlencoded({extended:false}));
+    app.use('/',routes)
 
     //This is for debug only
     if (process.env.ENV == 'dev'){
@@ -46,13 +48,13 @@ if (cluster.isMaster) {
         app.use(express.static(__dirname+"/static"));
     }
     //end of debug only
-    app.get('/', function(req, res) {
-        res.render('index', {
-            static_path: '',
-            theme: process.env.THEME || 'flatly',
-            flask_debug: process.env.FLASK_DEBUG || 'false'
-        });
-    });
+    // app.get('/', function(req, res) {
+    //     res.render('index', {
+    //         static_path: '',
+    //         theme: process.env.THEME || 'flatly',
+    //         flask_debug: process.env.FLASK_DEBUG || 'false'
+    //     });
+    // });
 
     app.post('/signup', function(req, res) {
         var item = {
