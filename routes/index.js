@@ -8,6 +8,7 @@ var content_skills = new SelfReloadJSON(__dirname + "/skills.json")
 var content_interests = new SelfReloadJSON(__dirname + "/interests.json")
 
 var router = express.Router();
+var staticpath = process.env.ENV == 'dev' ? '/':'static/';
 
 router.get('/', function(req, res, next){
     res.render('index',{
@@ -15,7 +16,8 @@ router.get('/', function(req, res, next){
         projects:content_projects,
         educations:content_educations,
         skills:content_skills,
-        interests:content_interests
+        interests:content_interests,
+        staticpath: staticpath
     })
 })
 
